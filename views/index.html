@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STT</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h4>Speech recognition test</h4>
+    <h2>Read text</h2>
+    <p>An Ox came down to a reedy pool to drink. As he splashed heavily into the water, he crushed a young Frog into the mud.
+
+        The old Frog soon missed the little one and asked his brothers and sisters what had become of him.
+        
+        "A great big monster," said one of them, "stepped on little brother with one of his huge feet!"
+        
+        "Big, was he!" said the old Frog, puffing herself up. "Was he as big as this?"
+        
+        "Oh, much bigger!" they cried.
+        
+        The Frog puffed up still more.</p>
+    
+    <div class="textbox" id="textbox"></div>
+  <form id="options" action="#">
+    <select id="lang">
+        <option value="">Language-eng</option>
+      </select>
+
+    <select  id="accent" name="accent">
+        <option value="en-IN">Accent-Ind</option>
+        <option value="en-US">Accent-Us</option>
+        <option value="en-UK">Accent-Uk</option>
+      </select>
+    <div class="rbuttons">
+    <input type="radio" id="wspeech" name="v-type" value="webkit" checked>
+    <label for="wspeech">WebSpeech</label><br>
+    <input type="radio" id="cspeech" name="v-type" value="cognitive">
+    <label for="cspeech">Cognitive Speech</label><br>
+    </div>
+    <input id="start" type="submit" value="Start">
+  </form>
+  
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/js/evenHandler.js"></script>
+</body>
+</html>
